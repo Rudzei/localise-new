@@ -3,30 +3,31 @@
 
 .container {
   width: min(100% - 40px, 1290px);
+
   margin-inline: auto;
 }
 
 .btn {
-  font-weight: 600;
-  font-size: 1rem;
-  color: $color-white;
-
   min-width: 120px;
   min-height: 45px;
 
+  color: $color-white;
   border-width: 1px;
   border-style: solid;
+
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .btn--light {
-  border-color: $color-primary;
   color: $color-primary;
+  border-color: $color-primary;
   background-color: $color-white;
 }
 
 .btn--accent {
-  background-color: $color-accent;
   border-color: $color-accent;
+  background-color: $color-accent;
 }
 
 .btn--sm {
@@ -38,4 +39,9 @@
     min-width: 100px;
     min-height: 40px;
   }
+}
+
+.btn--md {
+  min-width: 160px;
+  min-height: 60px;
 }

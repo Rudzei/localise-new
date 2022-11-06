@@ -8,27 +8,25 @@
 }
 
 html {
-  font-size: $font-size;
-  overflow-y: scroll;
   overflow-x: hidden;
+  overflow-y: scroll;
+
+  font-size: $font-size;
 }
 
 body {
-  font-size: 15px;
   font-family: $font-primary;
+  font-size: 15px;
   font-weight: 400;
 }
 
 a {
   text-decoration: none;
+
   color: $color-primary;
 }
 
-h1 {
-}
 
-h2 {
-}
 
-h3 {
-}
+
+
