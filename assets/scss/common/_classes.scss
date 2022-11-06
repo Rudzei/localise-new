@@ -5,3 +5,37 @@
   width: min(100% - 40px, 1290px);
   margin-inline: auto;
 }
+
+.btn {
+  font-weight: 600;
+  font-size: 1rem;
+  color: $color-white;
+
+  min-width: 120px;
+  min-height: 45px;
+
+  border-width: 1px;
+  border-style: solid;
+}
+
+.btn--light {
+  border-color: $color-primary;
+  color: $color-primary;
+  background-color: $color-white;
+}
+
+.btn--accent {
+  background-color: $color-accent;
+  border-color: $color-accent;
+}
+
+.btn--sm {
+  @include lg-min {
+    min-width: 120px;
+    min-height: 45px;
+  }
+  @include lg {
+    min-width: 100px;
+    min-height: 40px;
+  }
+}
