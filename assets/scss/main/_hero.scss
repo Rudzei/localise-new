@@ -68,6 +68,10 @@ $width: 610px;
     @include lg {
       justify-content: center;
     }
+    @include $xx {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__notes {
