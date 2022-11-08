@@ -1,0 +1,57 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.officer {
+  background-color: $color-blue;
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 53px;
+    padding-bottom: 104px;
+    @include xl-min {
+      gap: $gap 96px;
+    }
+    @include xl {
+      gap: $gap $gap;
+    }
+    @include sm {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      padding-bottom: 50px;
+    }
+  }
+  &__quote {
+    font-size: 30px;
+    line-height: 1.3;
+
+    margin: 10px 0 30px;
+    @include md {
+      font-size: 25px;
+      line-height: 1.2;
+    }
+    @include sm {
+      text-align: center;
+    }
+  }
+  &__description {
+    margin-bottom: 10px;
+  }
+  &__picture {
+    @include sm {
+      order: -1;
+    }
+  }
+  &__foto {
+    @include md-min {
+      max-width: 310px;
+    }
+    @include md {
+      max-width: 250px;
+    }
+    @include sm {
+      max-width: 100%;
+    }
+  }
+}
