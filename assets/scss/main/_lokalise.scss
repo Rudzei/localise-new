@@ -13,14 +13,11 @@
     margin-top: -35px;
   }
   &__title {
-    margin-bottom: 80px;
+    @include xl-min {
+      margin-bottom: 80px;
+    }
     @include xl-xs {
       margin-bottom: 50px;
-
-      font-size: 40px;
-    }
-    @include  xs {
-      font-size: 30px;
     }
   }
 

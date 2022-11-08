@@ -49,3 +49,7 @@
 .visually-hidden {
   @include  visually-hidden;
 }
+
+.link {
+  text-decoration: underline;
+}
