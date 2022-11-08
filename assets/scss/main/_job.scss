@@ -4,9 +4,9 @@
 .control,
 .quality {
   @extend %job-control;
-	&__content {
+  &__content {
     @extend %job-content-left;
-	}
+  }
   &__title {
     @extend %job-title;
   }
@@ -16,21 +16,22 @@
   &__btn {
     @extend %job-btn;
   }
-	&__picture {
+  &__picture {
     @extend %job-picture;
-	}
-	&__image {
+  }
+  &__image {
     @extend %job-image;
-	}
+  }
 }
 
 .time,
 .work {
-  @extend %job-control;
   flex-direction: row-reverse;
-	&__content {
+
+  @extend %job-control;
+  &__content {
     @extend %job-content-right;
-	}
+  }
   &__title {
     @extend %job-title;
   }
@@ -40,33 +41,34 @@
   &__btn {
     @extend %job-btn;
   }
-	&__picture {
+  &__picture {
     @extend %job-picture;
-	}
-	&__image {
+  }
+  &__image {
     @extend %job-image;
-	}
+  }
 }
 
 %job-control {
   display: flex;
   align-items: center;
-  gap: $gap-lg;
 
+  gap: $gap-lg;
   @include md-min {
     margin-top: 88px;
     margin-bottom: 248px;
   }
   @include md {
-    margin-bottom: 70px;
     flex-direction: column;
 
+    margin-bottom: 70px;
   }
 }
 
 %job-content-left {
   flex-basis: 200px;
   flex-grow: 1;
+
   @include xl-min {
     padding-right: 110px;
   }
@@ -75,6 +77,7 @@
 %job-content-right {
   flex-basis: 200px;
   flex-grow: 1;
+
   @include xl-min {
     padding-left: 110px;
   }
@@ -98,14 +101,15 @@
 }
 
 %job-description {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.5;
   margin-bottom: 25px;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 %job-btn {
-  font-weight: 600;
   font-size: 20px;
+  font-weight: 600;
   line-height: 1.5;
 }

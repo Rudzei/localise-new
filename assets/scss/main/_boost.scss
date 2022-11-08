@@ -3,11 +3,13 @@
 
 .boost {
   padding-bottom: 185px;
-  @include  xl {
+
+  @include xl {
     padding-bottom: 50px;
   }
   &__title {
     text-align: start;
+
     @include xl-min {
       margin-bottom: 75px;
     }
@@ -20,10 +22,11 @@
   }
   &__content {
     display: grid;
+
     gap: $gap-xl $gap-lg;
     @include lg-min {
       justify-content: space-between;
-      
+
       grid-template-columns: repeat(3, minmax(50px, 410px));
     }
     @include lg-sm {
@@ -37,23 +40,30 @@
 .boost-item {
   display: flex;
   flex-direction: column;
+
   @include lg {
     text-align: center;
   }
   &__title {
     margin-bottom: 27px;
-    font-size: 30px;
+
     text-align: start;
+
+    font-size: 30px;
+
     @include lg {
       margin-bottom: 10px;
+
       text-align: center;
     }
   }
   &__description {
     margin-bottom: 16px;
+
     font-size: 20px;
     line-height: 1.5;
-    @include  lg {
+
+    @include lg {
       margin-bottom: 10px;
     }
   }
@@ -70,8 +80,10 @@
 
     min-height: 200px;
     margin-bottom: 5px;
-    @include  lg {
+
+    @include lg {
       justify-content: center;
+
       margin-bottom: 20px;
     }
   }

@@ -26,9 +26,7 @@ a {
   color: $color-primary;
 }
 
-h1 {
 
-}
 
 h2 {
   text-align: center;
@@ -48,32 +46,32 @@ h2 {
 }
 
 h3 {
-font-weight: 600;
-line-height: 1.2;
+  font-weight: 600;
+  line-height: 1.2;
 
-@include xl-min {
-  font-size: 50px;
-}
-@include xl-lg {
-  font-size: 40px;
-}
-@include lg {
-  font-size: 30px;
-}
+  @include xl-min {
+    font-size: 50px;
+  }
+  @include xl-lg {
+    font-size: 40px;
+  }
+  @include lg {
+    font-size: 30px;
+  }
 }
 
 h4 {
-text-align: center;
+  text-align: center;
 
-font-weight: 600;
-line-height: 1.4;
+  font-weight: 600;
+  line-height: 1.4;
 
-@include xl-min {
-  font-size: 25px;
-}
-@include xl {
-  font-size: 20px;
-}
+  @include xl-min {
+    font-size: 25px;
+  }
+  @include xl {
+    font-size: 20px;
+  }
 }
 
 

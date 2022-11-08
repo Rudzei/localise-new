@@ -2,15 +2,16 @@
 @use "../mixins" as *;
 
 .lokalise {
-  padding-top: 78px;
   margin-top: -102px;
   margin-bottom: 150px;
+  padding-top: 78px;
 
   background-color: $color-brown-lg;
+
   @include xl {
+    margin-top: -35px;
     margin-bottom: 50px;
     padding-top: 50px;
-    margin-top: -35px;
   }
   &__title {
     @include xl-min {
@@ -23,22 +24,27 @@
 
   &__content {
     display: grid;
-    text-align: center;
     align-items: start;
 
     padding-bottom: 150px;
+
+    text-align: center;
+
     grid-column-gap: 20px;
     grid-row-gap: 55px;
     @include lg-min {
       justify-content: space-around;
+
       grid-template-columns: repeat(3, minmax(50px, 328px));
     }
-    @include  lg-sm {
-      padding-bottom: 50px;
+    @include lg-sm {
       justify-content: space-evenly;
+
+      padding-bottom: 50px;
+
       grid-template-columns: repeat(2, minmax(50px, max-content));
     }
-    @include  sm {
+    @include sm {
       padding-bottom: 50px;
     }
   }
@@ -47,18 +53,19 @@
 .object {
   display: grid;
   &__title {
-    grid-row-start: 2;
     margin: 5px 0 2px;
+
+    grid-row-start: 2;
   }
   &__description {
-    grid-row-start: 3;
-
     font-size: 18px;
     line-height: 1.4;
+
+    grid-row-start: 3;
   }
   &__picture {
     grid-row-start: 1;
-    @include  sm-min {
+    @include sm-min {
       margin-bottom: 18px;
     }
     @include sm {

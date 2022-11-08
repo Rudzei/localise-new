@@ -3,6 +3,7 @@
 
 .brands {
   background-color: $color-accent-lg;
+
   @include xl-min {
     padding: 120px 0;
   }
@@ -14,27 +15,29 @@
   }
 
   &__title {
-    margin: 0 auto 50px;
     max-width: 720px;
+    margin: 0 auto 50px;
   }
 
   &__list {
     display: grid;
     align-items: center;
-    
+
     gap: $gap-lg $gap;
-    
     @include xl-min {
-      grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
       justify-content: space-between;
+
+      grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
     }
     @include xl-lg {
-      grid-template-columns: repeat(3, minmax(50px, max-content));
       justify-content: space-evenly;
+
+      grid-template-columns: repeat(3, minmax(50px, max-content));
     }
     @include lg-md {
-      grid-template-columns: repeat(2, minmax(50px, max-content));
       justify-content: space-evenly;
+
+      grid-template-columns: repeat(2, minmax(50px, max-content));
     }
     @include md {
       justify-content: center;
