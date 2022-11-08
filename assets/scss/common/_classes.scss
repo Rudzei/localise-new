@@ -32,6 +32,11 @@
   background-color: $color-accent;
 }
 
+.btn--second {
+  border-color: $color-primary;
+  background-color: $color-primary;
+}
+
 .btn--sm {
   @include lg-min {
     min-width: 120px;
