@@ -7,6 +7,7 @@
 
 .footer-basic {
   border-bottom: 1px solid $color-primary;
+
   @include lg-min {
     display: flex;
 
@@ -19,9 +20,10 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
-	&__navbar {
+  &__navbar {
     display: flex;
     flex-wrap: wrap;
+
     @include xl-min {
       gap: $gap-xl;
     }
@@ -29,15 +31,17 @@
       gap: 80px;
     }
     @include md-sm {
-      gap: 60px;
       justify-content: space-evenly;
+
+      gap: 60px;
     }
-	}
+  }
 }
 
 .case {
   display: flex;
   flex-direction: column;
+
   margin-right: 140px;
 
   @include lg-min {
@@ -51,14 +55,15 @@
 
     text-align: center;
   }
-	&__title {
+  &__title {
+    margin-bottom: 28px;
+
     text-align: start;
 
-    font-weight: 600;
     font-size: 40px;
+    font-weight: 600;
     line-height: 1.25;
-    
-    margin-bottom: 28px;
+
     @include xl-sm {
       font-size: 35px;
     }
@@ -73,7 +78,7 @@
     display: flex;
     flex-direction: column;
   }
-	&__img {
+  &__img {
     margin-bottom: 28px;
 
     @include lg-min {
@@ -83,24 +88,24 @@
     @include lg {
       max-width: 100%;
     }
-	}
-	&__logo {
+  }
+  &__logo {
     width: 80px;
     height: 32px;
-	}
-	&__description {
-    font-size: 20px;
-    line-height: 1.5;
-
+  }
+  &__description {
     margin: 10px 0 15px;
-	}
-	&__link {
-    font-weight: 600;
+
     font-size: 20px;
     line-height: 1.5;
-
+  }
+  &__link {
     padding: 10px 10px 10px 0;
-	}
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
 }
 
 .footer-menu {
@@ -116,13 +121,14 @@
     text-align: center;
   }
   &__title {
+    margin-bottom: 20px;
+
     text-align: start;
 
-    font-weight: 600;
     font-size: 20px;
+    font-weight: 600;
     line-height: 1.25;
 
-    margin-bottom: 20px;
     @include sm {
       text-align: center;
     }

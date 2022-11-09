@@ -8,6 +8,7 @@
 
   padding-top: $gap-xl;
   padding-bottom: $gap-lg;
+
   @include md {
     align-content: center;
     flex-direction: column;
@@ -34,6 +35,7 @@
   &__text {
     font-size: 12px;
     line-height: 1.25;
+
     @include  md-min {
       max-width: 300px;
     }
@@ -42,6 +44,7 @@
 
 .copyright {
   padding-top: 5px;
+
   @include  md-min {
     margin-right: 76px;
   }
@@ -49,8 +52,9 @@
     text-align: center;
   }
   &__text {
+    margin: 0;
+
     font-size: 12px;
     line-height: 1.25;
-    margin: 0;
   }
 }
