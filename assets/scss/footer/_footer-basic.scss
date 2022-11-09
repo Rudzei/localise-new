@@ -1,0 +1,139 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.footer {
+  background-color: $color-gray;
+}
+
+.footer-basic {
+  border-bottom: 1px solid $color-primary;
+  @include lg-min {
+    display: flex;
+
+    padding-top: 58px;
+    padding-bottom: 95px;
+  }
+  @include lg {
+    flex-wrap: wrap;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+	&__navbar {
+    display: flex;
+    flex-wrap: wrap;
+    @include xl-min {
+      gap: $gap-xl;
+    }
+    @include xl-md {
+      gap: 80px;
+    }
+    @include md-sm {
+      gap: 60px;
+      justify-content: space-evenly;
+    }
+	}
+}
+
+.case {
+  display: flex;
+  flex-direction: column;
+  margin-right: 140px;
+
+  @include lg-min {
+    max-width: 300px;
+  }
+  @include lg {
+    max-width: 450px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+
+    text-align: center;
+  }
+	&__title {
+    text-align: start;
+
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.25;
+    
+    margin-bottom: 28px;
+    @include xl-sm {
+      font-size: 35px;
+    }
+    @include lg {
+      text-align: center;
+    }
+    @include sm {
+      font-size: 30px;
+    }
+  }
+  &__picture {
+    display: flex;
+    flex-direction: column;
+  }
+	&__img {
+    margin-bottom: 28px;
+
+    @include lg-min {
+      max-width: 300px;
+      max-height: 300px;
+    }
+    @include lg {
+      max-width: 100%;
+    }
+	}
+	&__logo {
+    width: 80px;
+    height: 32px;
+	}
+	&__description {
+    font-size: 20px;
+    line-height: 1.5;
+
+    margin: 10px 0 15px;
+	}
+	&__link {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+
+    padding: 10px 10px 10px 0;
+	}
+}
+
+.footer-menu {
+  @include md-min {
+    width: 180px;
+  }
+  @include md-sm {
+    flex-basis: 220px;
+  }
+  @include sm {
+    flex-basis: 100%;
+
+    text-align: center;
+  }
+  &__title {
+    text-align: start;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.25;
+
+    margin-bottom: 20px;
+    @include sm {
+      text-align: center;
+    }
+  }
+  &__list {
+    @include unlist;
+  }
+  &__item {
+    margin-bottom: 12px;
+  }
+  &__link {
+    padding: 10px 10px 10px 0;
+  }
+}
